@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 
 
 class TransaccionPago:
@@ -7,7 +7,7 @@ class TransaccionPago:
     def __init__(self, nombreTitularTransaccion, digitosTarjetaTransaccion, estadoTransaccion):
         self.nombreTitularTransaccion = nombreTitularTransaccion
         self.digitosTarjetaTransaccion = digitosTarjetaTransaccion
-        self.fechaActualTransaccion = datetime.today()
+        self.fechaActualTransaccion = date.today()
         self.estadoTransaccion = estadoTransaccion
 
     # NACHO
@@ -47,7 +47,7 @@ class Pago:
         self.nroFactura = nroFactura
         self.montoPago = montoPago
         self.estadoPago = estadoPago
-        self.fechaCreacionPago = datetime.today()
+        self.fechaCreacionPago = date.today()
 
     # FRANQUITO SPIDER
     def isfloat(self):

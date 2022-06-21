@@ -1,6 +1,6 @@
 from main import TransaccionPago
 from main import Pago
-from datetime import datetime
+from datetime import date
 import unittest
 
 class Mis_test(unittest.TestCase):
@@ -15,7 +15,7 @@ class Mis_test(unittest.TestCase):
 
     #NACHO
     def test_fechaActualTransaccion(self):
-        self.assertEqual(TransaccionPago("Pedro Fernandez", 1234, "En espera").fechaActualTransaccion, datetime.today())
+        self.assertEqual(TransaccionPago("Pedro Fernandez", 1234, "En espera").fechaActualTransaccion, date.today())
 
     #JUN
     def test_CodigoPagoAlfanumerico(self):
